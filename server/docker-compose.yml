@@ -1,0 +1,10 @@
+name: swords-of-fractalia_db
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: fractalia
+      POSTGRES_PASSWORD: ireallylikedragonsguys
+    ports:
+      - 10002:5432
